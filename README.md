@@ -1,4 +1,4 @@
-# Practica 4 - Umbralizaciones
+# Practica 3 - Transformada de Hough y Etiquetado de componentes conectados
 ## Integrantes
 | Integrante | Github |
 | ------ | ------ |
