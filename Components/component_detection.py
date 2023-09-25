@@ -36,7 +36,7 @@ class UnionFind:
         if x not in self.__body:
             self.__body[x] = x
 
-def conntected_components(Image: np.ndarray) -> np.ndarray:
+def connected_components(Image: np.ndarray) -> np.ndarray:
     uf = UnionFind()
     xAxisSize, yAxisSize = Image.shape
     newArray = np.zeros([xAxisSize, yAxisSize], dtype=int)
@@ -74,5 +74,6 @@ def conntected_components(Image: np.ndarray) -> np.ndarray:
                 value = uf.find(newArray[x][y])
                 if value is not None:
                     newArray[x][y] = value
+    print(uf)
     return newArray
 
